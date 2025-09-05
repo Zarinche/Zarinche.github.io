@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo de los Hongos</title>
+    <link rel="icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<a href="#" class="btn-subir" id="btnSubir">↑ Subir</a>
+
+<script>
+const btnSubir = document.getElementById("btnSubir");
+
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnSubir.style.display = "block";
+    } else {
+        btnSubir.style.display = "none";
+    }
+};
+
+
+btnSubir.addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+
+<body>
+    <header>
+        <h1>🌎Mundo de los Hongos</h1>
+        <p>Explora los diferentes tipos y sus especialidades</p>
+    </header>
+
+
+
+
+    <nav>
+        <a href="A.html">Tipos de Hongos Comestibles</a>
+        <a href="B.html">Tipos de Hongos Medicinales</a>
+        <a href="C.html">Tipos de Hongos Tóxicos</a>
+        <a href="D.html">Tipos de Micorrizas</a>
+        <a href="E.html">Partes del Hongo</a> 
+    </nav>
+
+    <section>
+        <div class="card">
+            <h2>Bienvenido 🍄</h2>
+            <p>
+                Este sitio web está dedicado a los hongos y sus diferentes tipos:
+                <b>comestibles</b>, <b>medicinales</b>, <b>tóxicos</b> y <b>micorrizas</b>.
+                Usa el menú superior para navegar entre las secciones.
+            </p>
+              <div class="imin">
+                    <img src="imgs/inm.webp" alt=""  height=260 width=400  > 
+                 </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mundo de los Hongos | Página educativa creada por Diego García</p>
+    </footer>
+</body>
+</html>

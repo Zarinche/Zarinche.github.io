@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes del Hongo</title>
+    <link rel="icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Partes del Hongo 🔬</h1>
+    </header>
+    
+<a href="index.html" class="btn-inicio"> ← inicio</a>
+<a href="#" class="btn-subir" id="btnSubir">↑ Subir</a>
+
+<script>
+const btnSubir = document.getElementById("btnSubir");
+
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnSubir.style.display = "block";
+    } else {
+        btnSubir.style.display = "none";
+    }
+};
+
+
+btnSubir.addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+
+    <nav>
+        <a href="A.html">Tipos de Hongos Comestibles</a>
+        <a href="B.html">Tipos de Hongos Medicinales</a>
+        <a href="C.html">Tipos de Hongos Tóxicos</a>
+        <a href="D.html">Tipos de Micorrizas</a>
+        <a href="E.html">Partes del Hongo</a> 
+    </nav>
+
+    <img src="imgs/estructura.webp" alt="Hongo" class="img-fija">
+
+    <section>
+        <div class="card">
+            <h2>🍄 Estructura de un hongo</h2>
+            <p>Los hongos presentan diferentes partes que cumplen funciones vitales en su crecimiento, reproducción y relación con el ambiente. Estas son las principales:</p>
+        </div>
+
+        <div class="card">
+            <h3>Sombrero (Píleo)</h3>
+            <p>Parte superior del hongo, de forma generalmente redondeada o plana. Protege el himenio y a las esporas.</p>
+            <p><b>Usos:</b> en especies comestibles, es la parte más consumida. También puede ser fuente de pigmentos naturales.</p>
+        </div>
+
+        <div class="card">
+            <h3>Escamas</h3>
+            <p>Pequeños fragmentos que suelen quedar en el sombrero, restos del velo universal.</p>
+            <p><b>Usos:</b> permiten identificar con precisión especies de hongos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Láminas o poros (Himenio)</h3>
+            <p>Superficie inferior del sombrero, donde se producen y liberan las esporas.</p>
+            <p><b>Usos:</b> fundamentales para la reproducción. En algunos estudios se emplean para identificar especies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Esporas</h3>
+            <p>Son las células reproductoras de los hongos, equivalentes a las semillas en las plantas.</p>
+            <p><b>Usos:</b> permiten la propagación de los hongos. En biotecnología se utilizan para cultivar nuevas cepas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Anillo</h3>
+            <p>Resto del velo parcial que queda alrededor del pie tras el desarrollo del hongo.</p>
+            <p><b>Usos:</b> sirve como característica de identificación de especies, especialmente en hongos tóxicos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Pie o Estípite</h3>
+            <p>Estructura que sostiene el sombrero y eleva al hongo por encima del suelo.</p>
+            <p><b>Usos:</b> en la cocina, también se consume. Puede aprovecharse como biomasa en compostaje.</p>
+        </div>
+
+        <div class="card">
+            <h3>Volva</h3>
+            <p>Base en forma de saco que envuelve al hongo en sus primeras etapas de desarrollo.</p>
+            <p><b>Usos:</b> es una característica muy importante para diferenciar hongos venenosos de los comestibles.</p>
+        </div>
+
+        <div class="card">
+            <h3>Micelio</h3>
+            <p>Red de filamentos subterráneos (hifas) que absorben nutrientes del suelo o del material en descomposición.</p>
+            <p><b>Usos:</b> se investiga su uso como material biodegradable, para fabricar envases, cuero vegetal e incluso ladrillos ecológicos.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mundo de los Hongos | Página educativa creada por Diego García</p>
+    </footer>
+</body>
+</html>

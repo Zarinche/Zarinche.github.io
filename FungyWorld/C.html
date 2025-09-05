@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongos Tóxicos</title>
+    <link rel="icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>☠️ Tipos de Hongos Tóxicos</h1>
+    </header>
+
+<a href="index.html" class="btn-inicio"> ← inicio</a>
+<a href="#" class="btn-subir" id="btnSubir">↑ Subir</a>
+
+<script>
+const btnSubir = document.getElementById("btnSubir");
+
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnSubir.style.display = "block";
+    } else {
+        btnSubir.style.display = "none";
+    }
+};
+
+
+btnSubir.addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+
+    <nav>
+        <a href="A.html">Tipos de Hongos Comestibles</a>
+        <a href="B.html">Tipos de Hongos Medicinales</a>
+        <a href="C.html">Tipos de Hongos Tóxicos</a>
+        <a href="D.html">Tipos de Micorrizas</a>
+        <a href="E.html">Partes del Hongo</a> 
+    </nav>
+
+<section>
+    <h2>☠️ Hongos Tóxicos: Identificación y Prevención</h2>
+    <p>Algunos hongos pueden parecer inofensivos o incluso similares a especies comestibles, pero contienen toxinas peligrosas para la salud humana. Es fundamental conocerlos para evitar intoxicaciones graves. Aquí te presentamos los más conocidos:</p>
+
+    <div class="card">
+        <h2>⚠️ Principales especies tóxicas</h2>
+        <ul>
+            <h3>Amanita phalloides (Oronja verde)</h3>
+            <p>Considerado el hongo más mortal. Contiene amatoxinas que afectan el hígado y pueden causar la muerte si no se trata a tiempo.</p>
+            <div class="imT1">
+                <img src="imgs/phalloides.webp" alt="" >
+            </div>
+
+            <h3>Amanita muscaria (Matamoscas)</h3>
+            <p>Famoso por su aspecto rojo con puntos blancos. Aunque no siempre mortal, puede causar alucinaciones, vómitos y convulsiones.</p>
+            <div class="imT2">
+                <img src="imgs/muscaria.webp" alt="" >
+            </div>
+
+            <h3>Galerina marginata</h3>
+            <p>Pequeño y marrón, suele confundirse con especies comestibles. Contiene las mismas toxinas que la Amanita phalloides.</p>
+            <div class="imT3">
+                <img src="imgs/marginata.webp" alt="" >
+            </div>
+
+            <h3>Cortinarius orellanus</h3>
+            <p>Sus toxinas afectan los riñones y los síntomas pueden tardar días en aparecer, lo que dificulta el diagnóstico temprano.</p>
+            <div class="imT4">
+                <img src="imgs/orellanus.webp" alt="" >
+            </div>
+
+            <h3>Entoloma sinuatum</h3>
+            <p>Conocido como “hongo embustero”, puede provocar fuertes trastornos gastrointestinales. Se parece a especies comestibles.</p>
+            <div class="imT5">
+                <img src="imgs/Entoloma.webp" alt="" >
+            </div>
+
+            <h3>Clitocybe dealbata</h3>
+            <p>Contiene muscarina, una toxina que afecta el sistema nervioso. Provoca sudoración, salivación excesiva y dificultad respiratoria.</p>
+            <div class="imT6">
+                <img src="imgs/Clitocybe.webp" alt="" >
+            </div>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🛑 Recomendaciones de seguridad</h2>
+        <ul>
+            <li>No recolectes hongos silvestres sin conocimiento experto.</li>
+            <li>Evita consumir hongos que no hayan sido identificados con certeza.</li>
+            <li>Ante cualquier síntoma tras el consumo de hongos, acude inmediatamente a un centro médico.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mundo de los Hongos | Página educativa creada por Diego García</p>
+</footer>
+</body>
+</html>

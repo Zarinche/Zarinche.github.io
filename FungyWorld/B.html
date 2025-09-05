@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongos Medicinales</title>
+    <link rel="icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌿 Tipos de Hongos Medicinales</h1>
+    </header>
+
+<a href="index.html" class="btn-inicio"> ← inicio</a>
+<a href="#" class="btn-subir" id="btnSubir">↑ Subir</a>
+
+<script>
+const btnSubir = document.getElementById("btnSubir");
+
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnSubir.style.display = "block";
+    } else {
+        btnSubir.style.display = "none";
+    }
+};
+
+
+btnSubir.addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+
+    <nav>
+        <a href="A.html">Tipos de Hongos Comestibles</a>
+        <a href="B.html">Tipos de Hongos Medicinales</a>
+        <a href="C.html">Tipos de Hongos Tóxicos</a>
+        <a href="D.html">Tipos de Micorrizas</a>
+        <a href="E.html">Partes del Hongo</a> 
+    </nav>
+
+<section>
+    <h2>🌿 Hongos Medicinales: Propiedades y Especies</h2>
+    <p>Los hongos medicinales han sido utilizados durante siglos por sus propiedades terapéuticas. Contienen compuestos bioactivos que fortalecen el sistema inmunológico, mejoran la salud cerebral y combaten inflamaciones. Aquí te presentamos los más destacados:</p>
+
+    <div class="card">
+        <h2>🍃 Principales especies medicinales</h2>
+        <ul>
+            <h3>Reishi (Ganoderma lucidum)</h3>
+            <p>Conocido como el “hongo de la inmortalidad”, ayuda a regular el sistema inmunológico, reducir el estrés y mejorar la calidad del sueño.</p>
+            <div class="imM1">
+                <img src="imgs/Reishi.webp" alt="" >
+            </div>
+
+            <h3>Melena de león (Hericium erinaceus)</h3>
+            <p>Estimula la formación de nuevas neuronas, mejora la memoria y la concentración. También tiene propiedades neuroprotectoras.</p>
+            <div class="imM2">
+                <img src="imgs/melena.webp" alt="" >
+            </div>
+
+            <h3>Cordyceps (Cordyceps sinensis / militaris)</h3>
+            <p>Mejora la energía, la oxigenación celular y la resistencia física. Es muy usado por deportistas y en medicina tradicional china.</p>
+            <div class="imM3">
+                <img src="imgs/Cordyceps.webp" alt="" >
+            </div>
+
+            <h3>Shiitake (Lentinula edodes)</h3>
+            <p>Contiene lentinan, un polisacárido que fortalece el sistema inmunológico y tiene efectos antitumorales. También ayuda a reducir el colesterol.</p>
+            <div class="imM4">
+                <img src="imgs/Shiitake.webp" alt=""   >
+            </div>
+
+            <h3>Maitake (Grifola frondosa)</h3>
+            <p>Regula la glucosa en sangre, apoya el tratamiento de la hipertensión y mejora la salud metabólica.</p>
+            <div class="imM5">
+                <img src="imgs/Maitake.webp" alt="" >
+            </div>
+
+            <h3>Trametes versicolor (Cola de pavo)</h3>
+            <p>Posee una potente acción inmunomoduladora. Su extracto PSK se usa como complemento en tratamientos contra el cáncer.</p>
+            <div class="imM6">
+                <img src="imgs/Trametes.webp" alt="" >
+            </div>
+
+            <h3>Chaga (Inonotus obliquus)</h3>
+            <p>Rico en antioxidantes, combate el estrés oxidativo, reduce la inflamación y apoya la salud digestiva.</p>
+            <div class="imM7">
+                <img src="imgs/Chaga.webp" alt=""  >
+            </div>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🧠 Beneficios generales</h2>
+        <p>Los hongos medicinales ofrecen beneficios como fortalecimiento inmunológico, reducción del estrés, mejora cognitiva, regulación metabólica y propiedades antiinflamatorias.</p>
+
+        <h2>⚠️ Precauciones</h2>
+        <p>Es importante consumirlos en dosis adecuadas y bajo supervisión profesional. Algunos deben ser procesados para liberar sus compuestos activos.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mundo de los Hongos | Página educativa creada por Diego García</p>
+</footer>
+</body>
+</html>

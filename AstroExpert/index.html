@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroExpert - Videojuegos</title>
+    <link rel="icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#" class="btn-subir" id="btnSubir">↑ Subir</a>
+    <!--<a href="index.html" class="btn-inicio">← Inicio</a>-->
+<script>
+    const btnSubir = document.getElementById("btnSubir");
+
+ 
+    window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            btnSubir.style.display = "block";
+        } else {
+            btnSubir.style.display = "none";
+        }
+    };
+
+
+    btnSubir.addEventListener("click", function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+
+    <header>
+        <h1>🎮 AstroExpert - Videojuegos 🚀</h1>
+        <p>Explorando mundos virtuales sin límites</p>
+    </header>
+
+
+    <nav>
+        <a href="#novedades">Novedades</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="imLogo">
+        <img src="logo.webp" alt="Space Raiders" height="400">
+    </div>
+    <section id="novedades">
+        <h2>🔥 Últimas Novedades</h2>
+        <div class="card">
+            <h3>Nuevo lanzamiento: Space Raiders</h3>
+            <div class="imin">
+                <!-- <img src="img/spaceraiders.webp" alt="Space Raiders"> -->
+            </div>
+            <p>Un juego de acción espacial donde deberás sobrevivir en un universo lleno de enemigos intergalácticos. ¡Conviértete en el héroe que la galaxia necesita!<b> apartir de 2026</b></p>
+        </div>
+
+         <!--<div class="card">*
+            <h3>Evento especial: Torneo Gamer 2025</h3>
+            <div class="imin">
+                <img src="img/torneo.webp" alt="Torneo Gamer">
+            </div>
+            <p>Unite a nuestra comunidad y participa en el torneo con premios increíbles. ¡Demostrá tus habilidades!</p>
+        </div>
+    </section>
+         -->
+    <section id="catalogo">
+        <h2>🎮 Nuestro Catálogo Proximamente</h2>
+        <div class="card">
+            <h3>Galaxy Fighters</h3>
+            <p>Combates intergalácticos en 2D con gráficos inmersivos.</p>
+        </div>
+        <div class="card">
+            <h3>Star Quest</h3>
+            <p>Aventura RPG con misiones épicas y jefes legendarios.</p>
+        </div>
+        <div class="card">
+            <h3>Racing Stars</h3>
+            <p>Carreras futuristas con vehículos personalizables.</p>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>👨‍🚀 Sobre Nosotros</h2>
+        <p>En <b>AstroExpert</b> creemos que los videojuegos son la puerta a nuevos mundos. Nuestro objetivo es crear experiencias inolvidables que combinen tecnología, diversión y comunidad.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>📩 Contacto</h2>
+        <p>¿Querés sumarte a nuestra comunidad gamer? Escribinos:</p>
+        <p><b>Email:</b> contacto.astroexpert@gmail.com</p>
+        <p><b>Teléfono:</b> [no disponible todavia] </p>
+    </section>
+
+    <footer>
+        <p>© 2025 AstroExpert - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

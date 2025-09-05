@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Todo 3D Impresiones</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.webp" />
+  <meta name="description" content="Pedí tus piezas personalizadas para impresión 3D. Contactanos, recibí tu presupuesto y el tiempo estimado de entrega." />
+</head>
+<body>
+
+
+  <header class="nav">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <span class="logo">🖨️</span>
+      <strong>Todo3DImpresiones</strong><span class="globe">⚙️</span>
+    </a>
+    <nav class="menu">
+      <a href="#servicios" class="menu__link">Servicios</a>
+      <a href="#como-funciona" class="menu__link">Cómo funciona</a>
+      <a href="#galeria" class="menu__link">Galería</a>
+      <a href="#contacto" class="menu__link">Contacto</a>
+    </nav>
+  </header>
+
+  
+  <section id="inicio" class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Pedí lo que quieras imprimir en <span class="accent">3D</span></h1>
+      <p>Subí tu diseño o contanos tu idea y te enviamos un <b>presupuesto</b> y <b>tiempo estimado</b> de entrega.</p>
+      <a class="btn btn--primary" href="#contacto">Pedir presupuesto</a>
+    </div>
+  </section>
+
+
+  <section id="servicios" class="wrap">
+    <h2 class="section__title">Nuestros servicios</h2>
+    <div class="grid cats">
+      <div class="card card--cat">📐<span>Diseño 3D personalizado</span></div>
+      <div class="card card--cat">🖨️<span>Impresión 3D bajo demanda</span></div>
+      <div class="card card--cat">🔧<span>Prototipos y repuestos</span></div>
+      <div class="card card--cat">🎁<span>Regalos y merchandising</span></div>
+    </div>
+  </section>
+
+
+  <section id="como-funciona" class="wrap">
+    <h2 class="section__title">Cómo funciona</h2>
+    <ol>
+      <li>Nos enviás tu archivo o idea por el WhatsApp de contacto.</li>
+      <li>Te mandamos un presupuesto con precio y tiempo de impresión.</li>
+      <li>Confirmás el pedido y comenzamos la producción.</li>
+      <li>Retirás en tienda o te lo enviamos a domicilio.</li>
+    </ol>
+  </section>
+
+
+  <section id="galeria" class="wrap">
+    <h2 class="section__title">Algunos trabajos realizados</h2>
+    <div class="grid gallery">
+      <div class="card card--gallery">
+        <img src="thumb1.webp" alt="Trabajo 1" />
+        <span class="card__title">Pieza mecánica personalizada</span>
+      </div>
+      <div class="card card--gallery">
+        <img src="thumb2.webp" alt="Trabajo 2" />
+        <span class="card__title">Figura decorativa</span>
+      </div>
+      <div class="card card--gallery">
+        <img src="thumb3.webp" alt="Trabajo 3" />
+        <span class="card__title">Pieza portable</span>
+      </div>
+      <div class="card card--gallery">
+        <img src="thumb4.webp" alt="Trabajo 4" />
+        <span class="card__title">Accesorio para el hogar</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contacto" class="wrap">
+    <h2 class="section__title">Contacto</h2>
+    <p>📍 Argentina (solo pais)</p>
+    <p>📱 Solo WhatsApp: <a href="https://wa.me/5493412474579" target="_blank" rel="noopener">+54 9 341 247 4579</a></p>
+    <a href="https://wa.me/5493412474579" target="_blank" rel="noopener" class="whatsapp-contact-btn" aria-label="Enviar mensaje por WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 24 24">
+    <path d="M12.04 2C6.52 2 2.04 6.48 2.04 12c0 2.11.55 4.07 1.51 5.78L2 22l4.36-1.43a9.94 9.94 0 0 0 5.68 1.67c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.18c-1.62 0-3.13-.47-4.41-1.27l-.31-.2-2.59.85.86-2.52-.2-.32a8.17 8.17 0 0 1-1.26-4.39c0-4.52 3.68-8.2 8.2-8.2s8.2 3.68 8.2 8.2-3.68 8.2-8.2 8.2zm4.49-6.18c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.21-.51-.42-.44-.57-.45h-.49c-.17 0-.45.06-.68.32-.23.25-.9.88-.9 2.15s.92 2.49 1.05 2.66c.13.17 1.81 2.76 4.39 3.87.61.26 1.09.42 1.46.54.61.19 1.17.16 1.61.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.49-.3z"/>
+  </svg>
+  <span>Enviar mensaje por WhatsApp</span>
+</a>
+
+</section>
+
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <small>© <span id="y"></span> Todo3DImpresiones</small>
+      <!--a class="link" href="#">Aviso legal</a>
+      <a class="link" href="#">Política de privacidad</a-->
+    </div>
+  </footer>
+
+
+  <button class="to-top" aria-label="Volver arriba">↑</button>
+
+ 
+  <a href="https://wa.me/5493412474579" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Enviar mensaje por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 24 24">
+      <path d="M12.04 2C6.52 2 2.04 6.48 2.04 12c0 2.11.55 4.07 1.51 5.78L2 22l4.36-1.43a9.94 9.94 0 0 0 5.68 1.67c5.52 0 10-4.48 10-10s-4.48-10-10-10zm0 18.18c-1.62 0-3.13-.47-4.41-1.27l-.31-.2-2.59.85.86-2.52-.2-.32a8.17 8.17 0 0 1-1.26-4.39c0-4.52 3.68-8.2 8.2-8.2s8.2 3.68 8.2 8.2-3.68 8.2-8.2 8.2zm4.49-6.18c-.25-.13-1.47-.73-1.7-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.21-.51-.42-.44-.57-.45h-.49c-.17 0-.45.06-.68.32-.23.25-.9.88-.9 2.15s.92 2.49 1.05 2.66c.13.17 1.81 2.76 4.39 3.87.61.26 1.09.42 1.46.54.61.19 1.17.16 1.61.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.49-.3z"/>
+    </svg>
+  </a>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    const toTop = document.querySelector('.to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        toTop.classList.add('show');
+      } else {
+        toTop.classList.remove('show');
+      }
+    });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setas Comestibles</title>
+    <link rel="icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍄 Tipos de Hongos Comestibles</h1>
+    </header>
+
+<a href="index.html" class="btn-inicio"> ← inicio</a>
+<a href="#" class="btn-subir" id="btnSubir">↑ Subir</a>
+
+<script>
+const btnSubir = document.getElementById("btnSubir");
+
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnSubir.style.display = "block";
+    } else {
+        btnSubir.style.display = "none";
+    }
+};
+
+
+btnSubir.addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+
+
+    <nav>
+        <a href="A.html">Tipos de Hongos Comestibles</a>
+        <a href="B.html">Tipos de Hongos Medicinales</a>
+        <a href="C.html">Tipos de Hongos Tóxicos</a>
+        <a href="D.html">Tipos de Micorrizas</a>
+        <a href="E.html">Partes del Hongo</a> 
+    </nav>
+
+    <section>
+        <h2>🍄 Tipos de Hongos Comestibles: Guía Completa</h2>
+        <p>Los hongos comestibles son un tesoro culinario que combina sabor, textura y beneficios nutricionales. Existen cientos de especies aptas para el consumo humano, aunque solo unas pocas son ampliamente cultivadas y comercializadas. Aquí te presentamos una clasificación detallada de los principales tipos y especies:</p>
+        <div class="card">
+            <h2>  🌱 Hongos Cultivados Comercialmente </h2>
+            <ul>
+                <h3>  Champiñón blanco (Agaricus bisporus)</h3>
+                <p>Es el hongo más consumido en el mundo. Tiene un sabor suave y se puede comer crudo o cocido. Es ideal para ensaladas, pizzas y salteados.</p>
+                 <div class="imC1">
+                    <img src="imgs/Agaricus-bisporus.webp" alt=""        > 
+                 </div>
+                    <h3>  Portobello (Agaricus brunnescens) </h3>
+                <p> Es una variedad madura del champiñón. Su tamaño grande y textura carnosa lo hacen perfecto para asar, rellenar o usar como sustituto de carne. </p>
+                  <div class="imC2">
+                    <img src="imgs/Portobello.webp" alt=""        > 
+                 </div>
+                <h3>  Shiitake (Lentinula edodes) </h3>
+                <p> Originario de Asia, tiene un sabor intenso y umami. Se utiliza ampliamente en sopas, salteados y platos orientales. </p>
+                  <div class="imC3">
+                    <img src="imgs/Shiitake.webp" alt=""        > 
+                 </div>
+                <h3>  Seta de ostra o gírgola (Pleurotus ostreatus) </h3>
+                <p> De textura delicada y sabor suave, es excelente para salteados, guisos y como acompañamiento de carnes.  </p>
+                 <div class="imC4">
+                    <img src="imgs/ostraa.webp" alt=""        > 
+                 </div>
+                <h3>  Enoki (Flammulina velutipes) </h3>
+                <p> Son hongos largos y finos, con textura crujiente. Se usan principalmente en sopas, ramen y platos asiáticos. </p>
+                  <div class="imC5">
+                    <img src="imgs/Enoki.webp" alt=""     > 
+                 </div>
+                <h3>  Melena de león (Hericium erinaceus) </h3>
+                <p>Tiene una apariencia peluda y un sabor que recuerda al marisco. Además de ser comestible, se le atribuyen propiedades medicinales.  </p>
+                   <div class="imC6">
+                    <img src="imgs/melena.webp" alt=""     > 
+                 </div>
+            </ul>
+        </div>
+         <div class="card">
+            <h2>  🌲 Hongos silvestres comestibles </h2>
+            <ul>
+                <h3>  Rebozuelo (Cantharellus cibarius)</h3>
+                <p>Muy apreciado en la alta cocina por su aroma afrutado y textura firme. Se usa en salsas, cremas y platos gourmet.</p>
+                 <div class="imC7">
+                    <img src="imgs/Rebozuelo.webp" alt=""   > 
+                 </div>
+                    <h3>  Boletus o porcini (Boletus edulis) </h3>
+                <p> Es una variedad madura del champiñón. Su tamaño grande y textura carnosa lo hacen perfecto para asar, rellenar o usar como sustituto de carne. </p>
+                  <div class="imC8">
+                    <img src="imgs/porcini.webp" alt=""        > 
+                 </div>
+                <h3>  Colmenilla (Morchella esculenta) </h3>
+                <p> Originario de Asia, tiene un sabor intenso y umami. Se utiliza ampliamente en sopas, salteados y platos orientales. </p>
+                  <div class="imC9">
+                    <img src="imgs/Colmenilla.webp" alt=""     > 
+                 </div>
+                <h3>  Oronja (Amanita caesarea) </h3>
+                <p> De textura delicada y sabor suave, es excelente para salteados, guisos y como acompañamiento de carnes.  </p>
+                 <div class="imC10">
+                    <img src="imgs/Oronja.webp" alt=""     > 
+                 </div>
+                <h3>  Ramaria botrytis </h3>
+                <p> Son hongos largos y finos, con textura crujiente. Se usan principalmente en sopas, ramen y platos asiáticos. </p>
+                  <div class="imC11">
+                    <img src="imgs/Ramaria.webp" alt=""     > 
+                 </div>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mundo de los Hongos | Página educativa creada por Diego García</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Micorrizas</title>
+    <link rel="icon" href="icon.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 Tipos de Micorrizas</h1>
+    </header>
+
+<a href="index.html" class="btn-inicio"> ← inicio</a>
+<a href="#" class="btn-subir" id="btnSubir">↑ Subir</a>
+
+<script>
+const btnSubir = document.getElementById("btnSubir");
+
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btnSubir.style.display = "block";
+    } else {
+        btnSubir.style.display = "none";
+    }
+};
+
+
+btnSubir.addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+
+    <nav>
+        <a href="A.html">Tipos de Hongos Comestibles</a>
+        <a href="B.html">Tipos de Hongos Medicinales</a>
+        <a href="C.html">Tipos de Hongos Tóxicos</a>
+        <a href="D.html">Tipos de Micorrizas</a>
+        <a href="E.html">Partes del Hongo</a> 
+    </nav>
+
+<section>
+    <h2>🌱 Micorrizas: Alianzas entre Hongos y Plantas</h2>
+    <p>Las micorrizas son asociaciones simbióticas entre hongos y raíces de plantas. Esta relación beneficia a ambos: los hongos obtienen nutrientes de la planta, mientras que la planta mejora su absorción de agua y minerales. Existen varios tipos, cada uno con características únicas:</p>
+
+    <div class="card">
+        <h2>🌿 Tipos principales de micorrizas</h2>
+        <ul>
+            <h3>Micorrizas arbusculares (Endomicorrizas)</h3>
+            <p>Son las más comunes. El hongo penetra las células de la raíz formando estructuras llamadas arbúsculos. Ayudan en la absorción de fósforo y otros minerales.</p>
+            <div class="imMi1">
+                <img src="imgs/arbusculares.webp" alt=""S>
+            </div>
+
+            <h3>Micorrizas ectomicorrízicas</h3>
+            <p>Forman una envoltura alrededor de las raíces sin penetrar las células. Son comunes en árboles como pinos, robles y abedules. Mejoran la resistencia a enfermedades.</p>
+            <div class="imMi2">
+                <img src="imgs/ectomicorriza.webp" alt="">
+            </div>
+
+            <h3>Micorrizas ericoides</h3>
+            <p>Se encuentran en plantas de suelos ácidos como los arándanos. Ayudan a descomponer materia orgánica para liberar nutrientes.</p>
+            <div class="imMi3">
+                <img src="imgs/ericoides.webp" alt="">
+            </div>
+
+
+            <h3>Micorrizas orquideoides</h3>
+            <p>Presentes en orquídeas. El hongo proporciona nutrientes esenciales durante las primeras etapas de vida de la planta.</p>
+            <div class="imMi4">
+                <img src="imgs/orquideoide.webp" alt="">
+            </div>
+
+            <h3>Micorrizas monotropoides</h3>
+            <p>Se dan en plantas no fotosintéticas que dependen completamente del hongo para obtener carbono y nutrientes.</p>
+            <div class="imMi5">
+                <img src="imgs/monotropoide.webp" alt="">
+            </div>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🌍 Importancia ecológica</h2>
+        <p>Las micorrizas son fundamentales para la salud de los ecosistemas. Mejoran la estructura del suelo, aumentan la biodiversidad y permiten que las plantas prosperen en condiciones adversas.</p>
+
+        <h2>🧪 Aplicaciones prácticas</h2>
+        <ul>
+            <li>Uso en agricultura sostenible para mejorar cultivos sin fertilizantes químicos.</li>
+            <li>Reforestación y restauración ecológica.</li>
+            <li>Producción de biofertilizantes.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Mundo de los Hongos | Página educativa creada por Diego García</p>
+</footer>
+</body>
+</html>
